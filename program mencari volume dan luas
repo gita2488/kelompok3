@@ -163,7 +163,7 @@ int main(){
         cout << "1 = Kubus\n2 = Balok\n3 = Limas Segitiga\n4 = Limas Segi Empat\n5 = Prisma Segitiga\n6 = Prisma Segi Empat\n7 = Tabung\n8 = Kerucut\n9 = Bola\nPilih bangun ruang : ";
         cin >> PilihanRuang;
 
-//fungsi fungsi untuk memasukkan nilai volume yang ingin dicari
+    //fungsi fungsi untuk memasukkan nilai volume yang ingin dicari
 
     if(PilihanRuang == 1){
         cout<<"Masukkan panjang sisi : ";
