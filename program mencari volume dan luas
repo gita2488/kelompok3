@@ -138,5 +138,85 @@ int main(){
     } else {
         cout<<"Pilihan kamu tidak valid :("<<endl;
     }
+ } else if (Pilihan == 2) {
+        int PilihanRuang;
+        cout << "1 = Kubus\n2 = Balok\n3 = Limas Segitiga\n4 = Limas Segi Empat\n5 = Prisma Segitiga\n6 = Prisma Segi Empat\n7 = Tabung\n8 = Kerucut\n9 = Bola\nPilih bangun ruang : ";
+        cin >> PilihanRuang;
+        
+    if(PilihanRuang == 1){
+        cout<<"Masukkan panjang sisi : ";
+        cin>>sisi;
+        cout<<"Volume Kubus : "<<Kubus(sisi);
+    }
+    else if(PilihanRuang == 2){
+        cout<<"Masukkan panjang : ";
+        cin>>panjang;
+        cout<<"Masukkan lebar : ";
+        cin>>lebar;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Volume Balok : "<<Balok(panjang, lebar, tinggi);
+    }
+else if(PilihanRuang == 3){
+        cout<<"Masukkan alas : ";
+        cin>>alas;
+        cout<<"Masukkan tinggi alas : ";
+        cin>>tinggialas;
+        cout<<"Masukkan tinggi limas : ";
+        cin>>tinggilimas;
+        cout<<"Volume Limas Segitiga : "<<LimasSegitiga(alas, tinggialas, tinggilimas);
+    }
+    else if (PilihanRuang == 4){
+        cout<<"Masukkan panjang : ";
+        cin>>panjang;
+        cout<<"Masukkan lebar : ";
+        cin>>lebar;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Volume Limas Segi Empat : "<<LimasSegiempat(panjang, lebar, tinggi);
+    }
+    else if (PilihanRuang == 5){
+        cout<<"Masukkan alas : ";
+        cin>>alas;
+        cout<<"Masukkan tinggi alas : ";
+        cin>>tinggialas;
+        cout<<"Masukkan tinggi prisma : ";
+        cin>>tinggiprisma;
+        cout<<"Volume Prisma Segitiga : "<<PrismaSegitiga(alas, tinggialas, tinggiprisma);
+    }
+ else if (PilihanRuang == 6){
+        cout<<"Masukkan panjang : ";
+        cin>>panjang;
+        cout<<"Masukkan lebar : ";
+        cin>>lebar;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Volume Prisma Segi Empat : "<<PrismaSegiempat(panjang, lebar, tinggi);
+    }
+    else if(PilihanRuang == 7){
+        cout<<"Masukkan jarijari : ";
+        cin>>jarijari;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Volume Tabung : "<<Tabung(jarijari, tinggi);
+    }
+    else if(PilihanRuang == 8){
+        cout<<"Masukkan jarijari : ";
+        cin>>jarijari;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Volume Kerucut : "<<Kerucut(jarijari, tinggi);
+    }
+    else if(PilihanRuang == 9){
+        cout<<"Masukkan jarijari : ";
+        cin>>jarijari;
+        cout<<"Volume Bola : "<<Bola(jarijari);
+    }
+    else {
+            cout << "Pilihan kamu tidak valid :(" << endl;
+        }
+ } else {
+        cout << "Pilihan kamu tidak valid :(" << endl;
+    }
     return 0
 }
