@@ -69,3 +69,74 @@ double Kerucut(double jarijari, double tinggi){
 double Bola(double jarijari){
     return 4.0/3.0*M_PI*pow(jarijari,3);
 }
+
+int main(){
+    int Pilihan;
+    double sisi, tinggi, alas, diagonal1, diagonal2, jarijari, a, b, lebar, panjang, tinggialas, tinggiprisma, tinggilimas;
+    
+    cout << "1 = Bangun Datar\n2 = Bangun Ruang\nKamu ingin pilih jenis bangun apa? ";
+    cin >> Pilihan;
+
+      if (Pilihan == 1) {
+        int PilihanDatar;
+        cout << "1 = Persegi\n2 = Persegi Panjang\n3 = Jajargenjang\n4 = Segitiga\n5 = Belah Ketupat\n6 = Layang Layang\n7 = Trapesium\n8 = Lingkaran\nPilih bangun datar : ";
+        cin >> PilihanDatar;
+    
+    if(PilihanDatar == 1){
+        cout<<"Masukkan sisi : ";
+        cin>>sisi;
+        cout<<"Luas Persegi : "<<Persegi(sisi);
+    }
+    else if(PilihanDatar == 2){
+        cout<<"Masukkan panjang : ";
+        cin>>panjang;
+        cout<<"Masukkan lebar : ";
+        cin>>lebar;
+        cout<<"Luas Persegi Panjang : "<<PersegiPanjang(panjang, lebar);
+    }
+    else if(PilihanDatar == 3){
+        cout<<"Masukkan alas : ";
+        cin>>alas;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Luas Jajargenjang : "<<Jajargenjang(alas,tinggi);
+    }
+    else if(PilihanDatar == 4){
+        cout<<"Masukkan alas : ";
+        cin>>alas;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Luas Segitiga : "<<Segitiga(alas, tinggi);
+    }
+    else if(PilihanDatar == 5){
+        cout<<"Masukkan diagonal1 : ";
+        cin>>diagonal1;
+        cout<<"Masukkan diagonal2 : ";
+        cin>>diagonal2;
+        cout<<"Luas Belah Ketupat : "<<BelahKetupat(diagonal1, diagonal2);
+    }
+    else if(PilihanDatar == 6){
+        cout<<"Masukkan diagonal1 : ";
+        cin>>diagonal1;
+        cout<<"Masukkan diagonal2 : ";
+        cin>>diagonal2;
+        cout<<"Luas Layang Layang : "<<LayangLayang(diagonal1, diagonal2);
+    }
+    else if(PilihanDatar == 7){
+        cout<<"Masukkan sisi sejajar (atas) : ";
+        cin>>a;
+        cout<<"Masukkan sisi sejajar (bawah) : ";
+        cin>>b;
+        cout<<"Masukkan tinggi : ";
+        cin>>tinggi;
+        cout<<"Luas Trapesium : "<<Trapesium(a, b, tinggi);
+    }
+    else if(PilihanDatar == 8){
+        cout<<"Masukkan jarijari : ";
+        cin>>jarijari;
+        cout<<"Luas Lingkaran : "<<Lingkaran(jarijari);
+    } else {
+        cout<<"Pilihan kamu tidak valid :("<<endl;
+    }
+    return 0
+}
