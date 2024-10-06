@@ -218,5 +218,5 @@ else if(PilihanRuang == 3){
  } else {
         cout << "Pilihan kamu tidak valid :(" << endl;
     }
-    return 0
+    return 0;
 }
