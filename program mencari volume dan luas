@@ -1,0 +1,71 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double Persegi(double sisi){
+    return pow(sisi,2);
+}
+
+double PersegiPanjang(double panjang, double lebar){
+    return panjang*lebar;
+}
+
+double Jajargenjang(double alas, double tinggi){
+    return alas*tinggi;
+}
+
+double Segitiga(double alas, double tinggi){
+    return 1.0/2.0*alas*tinggi;
+}
+
+double BelahKetupat(double diagonal1,double diagonal2){
+return 1.0/2.0*diagonal1*diagonal2;
+}
+
+double LayangLayang(double diagonal1, double diagonal2){
+    return 1.0/2.0*diagonal1*diagonal2;
+}
+
+double Trapesium(double a, double b, double tinggi){
+    return 1.0/2.0*(a+b)*tinggi;
+}
+
+double Lingkaran(double jarijari){
+    return M_PI*pow(jarijari,2);
+}
+
+double Kubus(double sisi){
+    return pow(sisi, 3);
+}
+
+double Balok(double panjang, double lebar, double tinggi){
+    return panjang*lebar*tinggi;
+}
+
+double LimasSegitiga(double alas, double tinggialas, double tinggilimas){
+    return 1.0/6.0*alas*tinggialas*tinggilimas;
+}
+
+double LimasSegiempat(double panjang, double lebar, double tinggi){
+    return 1.0/3.0*panjang*lebar*tinggi;
+}
+
+double PrismaSegitiga(double alas, double tinggialas, double tinggiprisma){
+return 1.0/2.0*alas*tinggialas*tinggiprisma;
+}
+
+double PrismaSegiempat(double panjang, double lebar, double tinggi){
+    return panjang*lebar*tinggi;
+}
+
+double Tabung(double jarijari, double tinggi){
+    return M_PI*pow(jarijari,2)*tinggi;
+}
+
+double Kerucut(double jarijari, double tinggi){
+    return 1.0/3.0*M_PI*pow(jarijari,2)*tinggi;
+}
+
+double Bola(double jarijari){
+    return 4.0/3.0*M_PI*pow(jarijari,3);
+}
