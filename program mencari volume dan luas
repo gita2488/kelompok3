@@ -2,78 +2,96 @@
 #include <cmath>
 using namespace std;
 
+//fungsi rumus untuk mencari luas persegi
 double Persegi(double sisi){
     return pow(sisi,2);
 }
 
+//fungsi rumus untuk mencari luas persegi panjang
 double PersegiPanjang(double panjang, double lebar){
     return panjang*lebar;
 }
 
+//fungsi rumus untuk mencari luas jajar genjang
 double Jajargenjang(double alas, double tinggi){
     return alas*tinggi;
 }
 
+//fungsi rumus untuk mencari luas segitiga
 double Segitiga(double alas, double tinggi){
     return 1.0/2.0*alas*tinggi;
 }
 
+//fungsi rumus untuk mencari luas belah ketupat
 double BelahKetupat(double diagonal1,double diagonal2){
 return 1.0/2.0*diagonal1*diagonal2;
 }
 
+//fungsi rumus untuk mencari luas layang layang
 double LayangLayang(double diagonal1, double diagonal2){
     return 1.0/2.0*diagonal1*diagonal2;
 }
 
+//fungsi rumus untuk mencari luas trapesium
 double Trapesium(double a, double b, double tinggi){
     return 1.0/2.0*(a+b)*tinggi;
 }
 
+//fungsi rumus untuk mencari luas lingkaran
 double Lingkaran(double jarijari){
     return M_PI*pow(jarijari,2);
 }
 
+//fungsi rumus untuk mencari volume kubus
 double Kubus(double sisi){
     return pow(sisi, 3);
 }
 
+//fungsi rumus untuk mencari volume balok
 double Balok(double panjang, double lebar, double tinggi){
     return panjang*lebar*tinggi;
 }
 
+//fungsi rumus untuk mencari volume limas segitiga
 double LimasSegitiga(double alas, double tinggialas, double tinggilimas){
     return 1.0/6.0*alas*tinggialas*tinggilimas;
 }
 
+//fungsi rumus untuk mencari volume limas segi empat
 double LimasSegiempat(double panjang, double lebar, double tinggi){
     return 1.0/3.0*panjang*lebar*tinggi;
 }
 
+//fungsi rumus untuk mencari volume prisma segitiga
 double PrismaSegitiga(double alas, double tinggialas, double tinggiprisma){
 return 1.0/2.0*alas*tinggialas*tinggiprisma;
 }
 
+//fungsi rumus untuk mencari volume prisma segi empat
 double PrismaSegiempat(double panjang, double lebar, double tinggi){
     return panjang*lebar*tinggi;
 }
 
+//fungsi rumus untuk mencari volume tabung
 double Tabung(double jarijari, double tinggi){
     return M_PI*pow(jarijari,2)*tinggi;
 }
 
+//fungsi rumus untuk mencari volume kerucut
 double Kerucut(double jarijari, double tinggi){
     return 1.0/3.0*M_PI*pow(jarijari,2)*tinggi;
 }
 
+//fungsi rumus untuk mencari volume bola
 double Bola(double jarijari){
     return 4.0/3.0*M_PI*pow(jarijari,3);
 }
 
 int main(){
-    int Pilihan;
-    double sisi, tinggi, alas, diagonal1, diagonal2, jarijari, a, b, lebar, panjang, tinggialas, tinggiprisma, tinggilimas;
-    
+    int Pilihan; //variabel untuk menentukan pilihan bangun
+    double sisi, tinggi, alas, diagonal1, diagonal2, jarijari, a, b, lebar, panjang, tinggialas, tinggiprisma, tinggilimas; //fungsi untuk menentukan variabel
+
+    //fungsi menentukan pilihan
     cout << "1 = Bangun Datar\n2 = Bangun Ruang\nKamu ingin pilih jenis bangun apa? ";
     cin >> Pilihan;
 
@@ -81,7 +99,9 @@ int main(){
         int PilihanDatar;
         cout << "1 = Persegi\n2 = Persegi Panjang\n3 = Jajargenjang\n4 = Segitiga\n5 = Belah Ketupat\n6 = Layang Layang\n7 = Trapesium\n8 = Lingkaran\nPilih bangun datar : ";
         cin >> PilihanDatar;
-    
+
+    //fungsi fungsi untuk memasukkan nilai luas yang ingin dicari
+
     if(PilihanDatar == 1){
         cout<<"Masukkan sisi : ";
         cin>>sisi;
@@ -142,7 +162,9 @@ int main(){
         int PilihanRuang;
         cout << "1 = Kubus\n2 = Balok\n3 = Limas Segitiga\n4 = Limas Segi Empat\n5 = Prisma Segitiga\n6 = Prisma Segi Empat\n7 = Tabung\n8 = Kerucut\n9 = Bola\nPilih bangun ruang : ";
         cin >> PilihanRuang;
-        
+
+//fungsi fungsi untuk memasukkan nilai volume yang ingin dicari
+
     if(PilihanRuang == 1){
         cout<<"Masukkan panjang sisi : ";
         cin>>sisi;
@@ -215,6 +237,7 @@ else if(PilihanRuang == 3){
     else {
             cout << "Pilihan kamu tidak valid :(" << endl;
         }
+//jika input tidak sesuai
  } else {
         cout << "Pilihan kamu tidak valid :(" << endl;
     }
